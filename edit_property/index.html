@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Dibs HTML Wireframe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <nav role="navigation">Nav</nav>
+  <main role="main">
+    <header>
+      <h1>Edit Property</h1>
+    </header>
+    <section>
+      <form id="list-property">
+        <div class="form-section">
+          <label for="property-name">Property name</label>
+          <input type="text" name="property-name" required>
+        </div>
+
+        <fieldset>
+          <legend>Property Type</legend>
+        
+          <input type="radio" name="property-type" value="0" checked>
+          <label for="property-type">
+            <span>House</span>
+          </label>
+        
+          <input type="radio" name="property-type" value="1">
+          <label for="property-type">
+            <span>Condo</span>
+          </label>
+        
+          <input type="radio" name="property-type" value="2">
+          <label for="property-type">
+            <span>Apartment</span>
+          </label>
+        </fieldset>
+        
+        <fieldset>
+          <legend>Property Address</legend>
+          <label for="street">Street</label>
+          <input type="text" name="street" required>
+          <label for="state">State</label>
+          <input type="text" name="state" required>
+          <label for="city">City</label>
+          <input type="text" name="city" required>
+          <label for="zipcode">Zip Code</label>
+          <input type="text" name="zipcode" required>
+        </fieldset>
+
+        <div class="form-section">
+          <label for="property-details">Property details</label>
+          <textarea name="property-details" rows="15"></textarea>
+        </div>
+
+        <button type="submit">Save</button>
+      </form>
+      <button type="submit">Delete</button>
+    </section>
+  </main>
+</body>
+
+</html>

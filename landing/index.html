@@ -48,8 +48,63 @@
       <header>
         <h3>Start Calling Dibs on Your Family Properties Now</h3>
       </header>
-      <button type="button">Sign up</button>
-      <button type="button">Login</button>
+      <div class="landing">
+        <div class="form">
+          <form id="register-form" aria-live="assertive" hidden>
+            <h2 class="signup-heading">Sign Up</h2>
+            <div class="textbox">
+              <input id="firstName" type="text" autocomplete="off" required />
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label for="firstName">first name</label>
+            </div>
+            <div class="textbox">
+              <input id="lastName" type="text" autocomplete="off" required />
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label for="lastName">last name</label>
+            </div>
+            <div class="textbox">
+              <input id="userName" type="text" autocomplete="off" required />
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label for="userName">username</label>
+            </div>
+            <div class="textbox">
+              <input id="passWord" type="password" autocomplete="off" required />
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label for="passWord">password</label>
+            </div>
+            <button type="submit">Submit</button>
+            <p class="message">Already registered?
+              <a href="#">Sign In</a>
+            </p>
+          </form>
+          <form id="login-form">
+            <h2 class="login-heading">Login</h2>
+            <div class="textbox">
+              <input id="login-username" type="text" autocomplete="off" required />
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label for="login-username">username</label>
+            </div>
+            <div class="textbox">
+              <input id="login-password" type="password" autocomplete="off" required />
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label for="login-password">password</label>
+            </div>
+            <button type="submit">Login</button>
+            <p class="message">Not registered?
+              <a href="#">Create an account</a>
+            </p>
+            <p class="message">For demo
+              <br>username: dibs
+              <br>password: password123</p>
+          </form>
+        </div>
+      </div>
     </section>
 
   </main>
